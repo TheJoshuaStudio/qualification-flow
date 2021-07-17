@@ -4,7 +4,6 @@ import React from 'react';
 
 function NavBar(props) {
   return (
-    
     <div class="nav-bar">
       <a href="">
         <img
@@ -14,7 +13,6 @@ function NavBar(props) {
         />
       </a>
     </div>
-    
   );
 }
 
