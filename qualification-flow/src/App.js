@@ -5,7 +5,9 @@ import NavBar from './components/NavBar/NavBar';
 import { Switch, Route  } from "react-router-dom";
 import QuestionsCard from './components/MainContainer/QuestionsCard';
 import questionsData from './data/questions.json'
-import InputFields from './components/MainContainer/inputFields';
+import USStates from './components/MainContainer/USStates';
+import InputEmail from './components/MainContainer/inputEmail';
+import FinalScreen from './components/MainContainer/FinalScreen';
 
 function App() {
   const [step, setStep] = useState(1);
@@ -22,7 +24,13 @@ function App() {
         onSetActiveQuestion={setActiveQuestion}
         onSetStep={setStep}
       />}
-      {step === 2 && <InputFields/>}
+      {step === 2 && <USStates
+        onSetStep={setStep}
+      />}
+      {step === 3 && <InputEmail  onSetStep={setStep}/>
+      }
+      {step === 4 && <FinalScreen/>
+      }
     </>
   );
 }

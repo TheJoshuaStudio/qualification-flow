@@ -21,12 +21,16 @@
       "choices": ["Yes","No"]
     },
     {
-      "question": "In what State are you located?",
-      "choices" : ["a ", "b"]
-    },
-    {
       "question": "Where did you hear about us?",
       "choices": ["a. Radio", "b. Another Sedera Member", "c. My Doctor", "d. A Sedera Affiliate", "e. Google Search","f. Social Media - FB, Instagram, Linkedin, Twitter, TikTok ", "g. Other"]
+    },
+    {
+      "question": "(Business Only) Do you have 5 or more individuals at your company?",
+      "choices": ["a. Yes","b. No", "c. Unsure?"]
+    },
+    {
+      "question": "(Business Only) Which best describes your team?",
+      "choices": ["a. Happily insured","b. Uninsured", "c. Unhappily insured","d. Not sure"]
     }
   ]
 }
