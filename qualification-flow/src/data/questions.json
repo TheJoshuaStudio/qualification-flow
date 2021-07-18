@@ -9,7 +9,24 @@
 "e. Have you left a job and are looking for an alternative to your previous insurance plan?"]
     },
     {
-      "question" : ""
+      "question" : "Do you think transparency is important when it comes to healthcare?",
+      "choices" : ["Yes","No"]
+    },
+    {
+      "question": "Do you love the sharing economy concept (Airbnb, Lyft, Gofundme, Kickstarter, Kiva, etc.) and would be interested to learn how this concept can be applied to medical costs?",
+      "choices":["Yes", "No"]
+    },
+    {
+      "question": "Do you strive for a healthy lifestyle and believe that it benefits your overall health and wellness?",
+      "choices": ["Yes","No"]
+    },
+    {
+      "question": "In what State are you located?",
+      "choices" : ["a ", "b"]
+    },
+    {
+      "question": "Where did you hear about us?",
+      "choices": ["a. Radio", "b. Another Sedera Member", "c. My Doctor", "d. A Sedera Affiliate", "e. Google Search","f. Social Media - FB, Instagram, Linkedin, Twitter, TikTok ", "g. Other"]
     }
   ]
 }
