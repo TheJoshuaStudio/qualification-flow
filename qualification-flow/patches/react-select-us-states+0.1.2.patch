@@ -1,0 +1,89 @@
+diff --git a/node_modules/react-select-us-states/src/states.json b/node_modules/react-select-us-states/src/states.json
+index 396778e..84c2188 100644
+--- a/node_modules/react-select-us-states/src/states.json
++++ b/node_modules/react-select-us-states/src/states.json
+@@ -7,10 +7,6 @@
+     "name": "Alaska",
+     "abbreviation": "AK"
+   },
+-  {
+-    "name": "American Samoa",
+-    "abbreviation": "AS"
+-  },
+   {
+     "name": "Arizona",
+     "abbreviation": "AZ"
+@@ -39,10 +35,6 @@
+     "name": "District Of Columbia",
+     "abbreviation": "DC"
+   },
+-  {
+-    "name": "Federated States Of Micronesia",
+-    "abbreviation": "FM"
+-  },
+   {
+     "name": "Florida",
+     "abbreviation": "FL"
+@@ -51,10 +43,6 @@
+     "name": "Georgia",
+     "abbreviation": "GA"
+   },
+-  {
+-    "name": "Guam",
+-    "abbreviation": "GU"
+-  },
+   {
+     "name": "Hawaii",
+     "abbreviation": "HI"
+@@ -91,10 +79,6 @@
+     "name": "Maine",
+     "abbreviation": "ME"
+   },
+-  {
+-    "name": "Marshall Islands",
+-    "abbreviation": "MH"
+-  },
+   {
+     "name": "Maryland",
+     "abbreviation": "MD"
+@@ -155,10 +139,6 @@
+     "name": "North Dakota",
+     "abbreviation": "ND"
+   },
+-  {
+-    "name": "Northern Mariana Islands",
+-    "abbreviation": "MP"
+-  },
+   {
+     "name": "Ohio",
+     "abbreviation": "OH"
+@@ -171,18 +151,10 @@
+     "name": "Oregon",
+     "abbreviation": "OR"
+   },
+-  {
+-    "name": "Palau",
+-    "abbreviation": "PW"
+-  },
+   {
+     "name": "Pennsylvania",
+     "abbreviation": "PA"
+   },
+-  {
+-    "name": "Puerto Rico",
+-    "abbreviation": "PR"
+-  },
+   {
+     "name": "Rhode Island",
+     "abbreviation": "RI"
+@@ -211,10 +183,6 @@
+     "name": "Vermont",
+     "abbreviation": "VT"
+   },
+-  {
+-    "name": "Virgin Islands",
+-    "abbreviation": "VI"
+-  },
+   {
+     "name": "Virginia",
+     "abbreviation": "VA"

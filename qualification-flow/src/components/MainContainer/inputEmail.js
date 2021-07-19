@@ -1,7 +1,6 @@
 import React from 'react';
 import 'bulma/css/bulma.min.css';
 import '../MainContainer/inputEmail.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function inputEmail({ props, onSetStep }) {
 

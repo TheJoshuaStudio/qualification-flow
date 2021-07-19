@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef} from 'react';
 import '../MainContainer/questionCard.css';
-import 'bulma/css/bulma.min.css';
+import 'bulma/css/bulma.css';
 // import NavBar from '../NavBar/NavBar';
 // import inputFields from './inputFields';
 
@@ -25,9 +25,13 @@ export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions,
   }
 
   const nextClickHandler = (e) => {
-    if(selected === '') {
-      return setError('Please select one option!');
-    }
+
+    ////////////// IF REQUIREMENT IS NEEDED!
+
+    // if(selected === '') {
+    //   return setError('Please select one option!');
+    // }
+
     onAnswerUpdate(prevState => [...prevState, { q: data.question, a: selected }]);
     setSelected('');
     if (activeQuestion < numberOfQuestions - 1) {
@@ -39,20 +43,20 @@ export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions,
 
   return (
     <div className="mainContainer">
-      <div className="card">
+      <div className="card is-brown">
        <div className="card-content">
            <div className="content">
             <h2 className="mb-5">{data.question}</h2>
             <div className="control" ref={radiosWrapper}>
               {data.choices.map((choice, i) => (
                 <label className="radio has-background-light" key={i}>
-                  <input type="radio" name="answer" value={choice} onChange={changeHandler} />
+                  <input type="checkbox" name="answer" value={choice} onChange={changeHandler} />
                   {choice}
                 </label>
               ))}
             </div>
             {error && <div className="has-text-danger">{error}</div>}
-            <button className="button is-link is-medium is-fullwidth mt-4" onClick={nextClickHandler}>Next</button>
+            <button className="button is-link is-medium is-fullwidth mt-4"  onClick={nextClickHandler}>Next</button>
           </div>
          
          </div>

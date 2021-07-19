@@ -2,7 +2,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import NavBar from './components/NavBar/NavBar';
-import { Switch, Route  } from "react-router-dom";
 import QuestionsCard from './components/MainContainer/QuestionsCard';
 import questionsData from './data/questions.json'
 import USStates from './components/MainContainer/USStates';
