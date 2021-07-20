@@ -4,10 +4,10 @@ import React from 'react';
 
 function NavBar(props) {
   return (
-    <div class="nav-bar">
+    <div className="nav-bar">
       <a href="">
         <img
-          class="nav-img"
+          className="nav-img"
           src={Logo}
           alt="Click to access main page"
         />

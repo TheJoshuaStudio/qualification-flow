@@ -1,6 +1,6 @@
 import React, { useState }from 'react';
 import 'bulma/css/bulma.min.css';
-import "../MainContainer/UsStates.css"
+import "../MainContainer/styleSheet.css"
 import SelectUSState from '../../../node_modules/react-select-us-states';
 
 function USStates({ props, onSetStep }) {
@@ -11,7 +11,7 @@ function USStates({ props, onSetStep }) {
   }
 
     return (
-      <div className="mainContainer">
+      <div className="hero is-fullheight">
       <div className="card">
        <div className="card-content">
             <div className="content">
@@ -21,6 +21,7 @@ function USStates({ props, onSetStep }) {
                   </span>
             
               <button className="button is-link is-medium is-fullwidth mt-4" onClick={handleSubmit}>Next</button>
+              <progress className="progress is-success is-medium" value="90" max="100"></progress>
 
             </div>
             </div>

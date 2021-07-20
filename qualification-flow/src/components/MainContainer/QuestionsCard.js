@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef} from 'react';
-import '../MainContainer/questionCard.css';
+import '../MainContainer/styleSheet.css';
 import 'bulma/css/bulma.min.css';
 
 
@@ -11,6 +11,7 @@ export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions,
   const [selected, setSelected] = useState('');
   const [error, setError] = useState('');
   const radiosWrapper = useRef();
+  
 
   useEffect(() => {
     const findCheckedInput = radiosWrapper.current.querySelector('input:checked');
@@ -58,7 +59,8 @@ export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions,
               ))}
             </div>
             {error && <div className="has-text-danger">{error}</div>}
-            <button className="button  is-medium is-fullwidth mt-4"  onClick={nextClickHandler}>Next</button>
+            <button className="button  is-medium is-fullwidth mt-4" onClick={nextClickHandler}>Next</button>
+            <progress id="step-progress" className="progress is-success is-medium" value={(activeQuestion)*10} max="80">{activeQuestion}%</progress>
           </div>
          
          </div>
