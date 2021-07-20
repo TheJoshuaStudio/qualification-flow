@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef} from 'react';
 import '../MainContainer/questionCard.css';
-import 'bulma/css/bulma.css';
+import 'bulma/css/bulma.min.css';
+
+
 // import NavBar from '../NavBar/NavBar';
 // import inputFields from './inputFields';
 
@@ -42,8 +44,8 @@ export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions,
   }
 
   return (
-    <div className="mainContainer">
-      <div className="card is-brown">
+    <div className="hero is-fullheight">
+      <div className="card ">
        <div className="card-content">
            <div className="content">
             <h2 className="mb-5">{data.question}</h2>
@@ -56,7 +58,7 @@ export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions,
               ))}
             </div>
             {error && <div className="has-text-danger">{error}</div>}
-            <button className="button is-link is-medium is-fullwidth mt-4"  onClick={nextClickHandler}>Next</button>
+            <button className="button  is-medium is-fullwidth mt-4"  onClick={nextClickHandler}>Next</button>
           </div>
          
          </div>

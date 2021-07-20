@@ -2,11 +2,11 @@
   "data": [
     {
       "question" : "What problem are you trying to solve?",
-      "choices": ["a. Are you feeling priced out of health insurance for yourself or your family and looking for a more affordable way to manage healthcare expenses?",
-      "b. Are you a business owner who is feeling priced out of offering health insurance to your employees?",
-    "c. Are you tired of paying into a brokes healthcare system for which cists continue to rise?",
-  "d. Are you tired of not getting a straight answer on costs between your healthcare provider and your insurance company?",
-"e. Have you left a job and are looking for an alternative to your previous insurance plan?"]
+      "choices": ["Are you feeling priced out of health insurance for yourself or your family and looking for a more affordable way to manage healthcare expenses?",
+      "Are you a business owner who is feeling priced out of offering health insurance to your employees?",
+    "Are you tired of paying into a brokes healthcare system for which cists continue to rise?",
+  "Are you tired of not getting a straight answer on costs between your healthcare provider and your insurance company?",
+"Have you left a job and are looking for an alternative to your previous insurance plan?"]
     },
     {
       "question" : "Do you think transparency is important when it comes to healthcare?",
@@ -26,11 +26,11 @@
     },
     {
       "question": "(Business Only) Do you have 5 or more individuals at your company?",
-      "choices": ["a. Yes","b. No", "c. Unsure?"]
+      "choices": ["Yes","No", "Unsure?"]
     },
     {
       "question": "(Business Only) Which best describes your team?",
-      "choices": ["a. Happily insured","b. Uninsured", "c. Unhappily insured","d. Not sure"]
+      "choices": ["Happily insured","Uninsured", "Unhappily insured","Not sure"]
     }
   ]
 }

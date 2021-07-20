@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/NavBar';
 import QuestionsCard from './components/MainContainer/QuestionsCard';
 import questionsData from './data/questions.json'
 import USStates from './components/MainContainer/USStates';
+// import statesData from './data/states.json'
 import InputEmail from './components/MainContainer/inputEmail';
 import FinalScreen from './components/MainContainer/FinalScreen';
 
@@ -25,6 +26,7 @@ function App() {
       />}
       {step === 2 && <USStates
         onSetStep={setStep}
+       
       />}
       {step === 3 && <InputEmail  onSetStep={setStep}/>
       }
