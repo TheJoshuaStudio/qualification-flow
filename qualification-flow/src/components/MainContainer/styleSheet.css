@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   background-color: #f6f4f3 !important;
-  font-family: work-sans;
+  font-family: work-sans !important;
   font-weight: 100;
   margin-top: 0.5%;
 }
