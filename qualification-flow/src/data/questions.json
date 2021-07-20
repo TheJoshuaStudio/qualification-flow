@@ -22,7 +22,7 @@
     },
     {
       "question": "Where did you hear about us?",
-      "choices": ["a. Radio", "b. Another Sedera Member", "c. My Doctor", "d. A Sedera Affiliate", "e. Google Search","f. Social Media - FB, Instagram, Linkedin, Twitter, TikTok ", "g. Other"]
+      "choices": ["Radio", "Another Sedera Member", "My Doctor", "A Sedera Affiliate", "Google Search","Social Media - FB, Instagram, Linkedin, Twitter, TikTok ", "Other"]
     },
     {
       "question": "(Business Only) Do you have 5 or more individuals at your company?",
