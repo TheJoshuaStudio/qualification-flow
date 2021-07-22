@@ -22,7 +22,7 @@ function inputEmail({ props, onSetStep }) {
     </div>
             </div>
             <button className="button is-link is-medium is-fullwidth mt-4" onClick={handleSubmit}>Submit</button>
-            <progress className="progress is-success is-medium" value="100" max="100"></progress>
+            <progress className="progress is-primary is-medium" value="100" max="100"></progress>
 
             </div>
         </div>

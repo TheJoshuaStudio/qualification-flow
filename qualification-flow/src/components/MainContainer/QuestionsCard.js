@@ -2,12 +2,8 @@ import React, { useState, useEffect, useRef} from 'react';
 import '../MainContainer/styleSheet.css';
 import 'bulma/css/bulma.min.css';
 
-
-// import NavBar from '../NavBar/NavBar';
-// import inputFields from './inputFields';
-
 export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion,onSetStep }) {
-  // const [step, setStep] = useState(1);
+  
   const [selected, setSelected] = useState('');
   const [error, setError] = useState('');
   const radiosWrapper = useRef();
@@ -60,7 +56,7 @@ export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions,
             </div>
             {error && <div className="has-text-danger">{error}</div>}
             <button className="button  is-medium is-fullwidth mt-4" onClick={nextClickHandler}>Next</button>
-            <progress id="step-progress" className="progress is-success is-medium" value={(activeQuestion)*10} max="80">{activeQuestion}%</progress>
+            <progress id="step-progress" className="progress is-primary is-medium" value={(activeQuestion)*10} max="80">{activeQuestion}%</progress>
           </div>
          
          </div>
