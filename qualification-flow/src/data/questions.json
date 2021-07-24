@@ -6,31 +6,40 @@
       "Are you a business owner who is feeling priced out of offering health insurance to your employees?",
     "Are you tired of paying into a brokes healthcare system for which cists continue to rise?",
   "Are you tired of not getting a straight answer on costs between your healthcare provider and your insurance company?",
-"Have you left a job and are looking for an alternative to your previous insurance plan?"]
+"Have you left a job and are looking for an alternative to your previous insurance plan?"],
+      "questionId": "0",
+      "condition": "Business choice"
     },
     {
       "question" : "Do you think transparency is important when it comes to healthcare?",
-      "choices" : ["Yes","No"]
+      "choices" : ["Yes","No"],
+      "questionId": "1"
     },
     {
       "question": "Do you love the sharing economy concept (Airbnb, Lyft, Gofundme, Kickstarter, Kiva, etc.) and would be interested to learn how this concept can be applied to medical costs?",
-      "choices":["Yes", "No"]
+      "choices":["Yes", "No"],
+      "questionId": "2"
     },
     {
       "question": "Do you strive for a healthy lifestyle and believe that it benefits your overall health and wellness?",
-      "choices": ["Yes","No"]
+      "choices": ["Yes","No"],
+      "questionId": "3"
     },
     {
       "question": "Where did you hear about us?",
       "choices": ["Radio", "Another Sedera Member", "My Doctor", "A Sedera Affiliate", "Google Search","Social Media - FB, Instagram, Linkedin, Twitter, TikTok ", "Other"]
+      ,
+      "questionId": "4"
     },
     {
       "question": "(Business Only) Do you have 5 or more individuals at your company?",
-      "choices": ["Yes","No", "Unsure?"]
+      "choices": ["Yes","No", "Unsure?"],
+      "questionId": "5"
     },
     {
       "question": "(Business Only) Which best describes your team?",
-      "choices": ["Happily insured","Uninsured", "Unhappily insured","Not sure"]
+      "choices": ["Happily insured","Uninsured", "Unhappily insured","Not sure"],
+      "questionId": "6"
     }
   ]
 }

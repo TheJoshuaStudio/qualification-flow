@@ -4,7 +4,9 @@ import '../MainContainer/styleSheet.css'
 
 function inputEmail({ props, onSetStep }) {
 
+
   const handleSubmit = (e) => {
+    
     onSetStep(4)
   }
 

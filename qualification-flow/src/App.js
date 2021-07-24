@@ -17,6 +17,7 @@ function App() {
       <NavBar />
       {step === 1 && <QuestionsCard
         data={questionsData.data[activeQuestion]}
+        
         onAnswerUpdate={setAnswers}
         numberOfQuestions={questionsData.data.length}
         activeQuestion={activeQuestion}
@@ -36,3 +37,6 @@ function App() {
 }
 
 export default App;
+
+
+

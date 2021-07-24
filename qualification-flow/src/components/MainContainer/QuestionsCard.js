@@ -2,12 +2,13 @@ import React, { useState, useEffect, useRef} from 'react';
 import '../MainContainer/styleSheet.css';
 import 'bulma/css/bulma.min.css';
 
-export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion,onSetStep }) {
+export default function QuestionsCard({ data,questionB, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion,onSetStep }) {
   
   const [selected, setSelected] = useState('');
   const [error, setError] = useState('');
   const radiosWrapper = useRef();
   
+  // console.log(data.choices.slice(1,2))
 
   useEffect(() => {
     const findCheckedInput = radiosWrapper.current.querySelector('input:checked');
@@ -22,7 +23,9 @@ export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions,
       setError('');
     }
   }
+  
 
+  
   const nextClickHandler = (e) => {
 
     ////////////// IF REQUIREMENT IS NEEDED!
@@ -33,12 +36,26 @@ export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions,
 
     onAnswerUpdate(prevState => [...prevState, { q: data.question, a: selected }]);
     setSelected('');
-    if (activeQuestion < numberOfQuestions - 1) {
+    if (activeQuestion < numberOfQuestions -1) {
       onSetActiveQuestion(activeQuestion + 1);
-    } else {
+      {
+        if (activeQuestion === 0 && (selected === "Are you a business owner who is feeling priced out of offering health insurance to your employees?") ){
+         
+          console.log("try again"); 
+        }
+      }
+    } 
+    else {
       onSetStep(2);
     }
   }
+
+  // const conditional = data.filter(q => {
+  //   if (!q.condition) {
+  //     return true;
+  //   }
+  //   return q.condition({choices})
+  // })
 
   return (
     <div className="hero is-fullheight">
@@ -49,8 +66,9 @@ export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions,
             <div className="control" ref={radiosWrapper}>
               {data.choices.map((choice, i) => (
                 <label className="radio has-background-light" key={i}>
-                  <input type="checkbox" name="answer" value={choice} onChange={changeHandler} />
+                  <input type="radio" name="answer" value={choice} onChange={changeHandler} />
                   {choice}
+                  
                 </label>
               ))}
             </div>
