@@ -7,6 +7,7 @@ import questionsData from './data/questions.json'
 import USStates from './components/MainContainer/USStates';
 import InputEmail from './components/MainContainer/inputEmail';
 import FinalScreen from './components/MainContainer/FinalScreen';
+import GetStarted from './components/MainContainer/GetStarted';
 
 function App() {
   const [step, setStep] = useState(1);
@@ -15,7 +16,10 @@ function App() {
   return (
     <>
       <NavBar />
-      {step === 1 && <QuestionsCard
+      {step === 1 && <GetStarted
+        onSetStep={setStep}
+      />}
+      {step === 2 && <QuestionsCard
         data={questionsData.data[activeQuestion]}
         onAnswerUpdate={setAnswers}
         numberOfQuestions={questionsData.data.length}
@@ -23,13 +27,13 @@ function App() {
         onSetActiveQuestion={setActiveQuestion}
         onSetStep={setStep}
       />}
-      {step === 2 && <USStates
+      {step === 3 && <USStates
         onSetStep={setStep}
       />}
-      {step === 3 && <InputEmail
+      {step === 4 && <InputEmail
         onSetStep={setStep}
       />}
-      {step === 4 && <FinalScreen/>
+      {step === 5 && <FinalScreen/>
       }
     </>
   );

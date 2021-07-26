@@ -7,7 +7,7 @@ function USStates({props, onSetStep }) {
   const [newValue, setNewValue] = useState('')
   
   const handleSubmit = (e) => {
-    onSetStep(3)
+    onSetStep(4)
   }
 
 

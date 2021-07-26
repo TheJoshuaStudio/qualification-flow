@@ -7,7 +7,7 @@ function inputEmail({ props, onSetStep }) {
 
   const handleSubmit = (e) => {
     
-    onSetStep(4)
+    onSetStep(5)
   }
 
   return (
@@ -21,8 +21,15 @@ function inputEmail({ props, onSetStep }) {
       <p className="control">
         <input className="input" type="email" placeholder="Email"/>
       </p>
-    </div>
+              
+              </div>
             </div>
+              
+              <label className="checkbox">
+                <input type="checkbox" />
+                   I would like to schedule a call with a Medical Cost Sharing Expert
+                </label>
+             
             <button className="button is-link is-medium is-fullwidth mt-4" onClick={handleSubmit}>Submit</button>
             <progress className="progress is-primary is-medium" value="100" max="100"></progress>
 
