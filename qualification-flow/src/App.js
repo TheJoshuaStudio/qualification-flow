@@ -17,13 +17,14 @@ function App() {
       <NavBar />
       {step === 1 && <QuestionsCard
         data={questionsData.data[activeQuestion]}
-        
         onAnswerUpdate={setAnswers}
         numberOfQuestions={questionsData.data.length}
         activeQuestion={activeQuestion}
         onSetActiveQuestion={setActiveQuestion}
         onSetStep={setStep}
       />}
+      
+    
       {step === 2 && <USStates
         onSetStep={setStep}
       />}

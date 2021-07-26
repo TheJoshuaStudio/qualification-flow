@@ -2,13 +2,13 @@ import React, { useState, useEffect, useRef} from 'react';
 import '../MainContainer/styleSheet.css';
 import 'bulma/css/bulma.min.css';
 
-export default function QuestionsCard({ data,questionB, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion,onSetStep }) {
+export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion,onSetStep }) {
   
   const [selected, setSelected] = useState('');
   const [error, setError] = useState('');
   const radiosWrapper = useRef();
+ 
   
-  // console.log(data.choices.slice(1,2))
 
   useEffect(() => {
     const findCheckedInput = radiosWrapper.current.querySelector('input:checked');
@@ -23,17 +23,15 @@ export default function QuestionsCard({ data,questionB, onAnswerUpdate, numberOf
       setError('');
     }
   }
-  
 
-  
+
   const nextClickHandler = (e) => {
-
+    
     ////////////// IF REQUIREMENT IS NEEDED!
 
     // if(selected === '') {
     //   return setError('Please select one option!');
     // }
-
     onAnswerUpdate(prevState => [...prevState, { q: data.question, a: selected }]);
     setSelected('');
     if (activeQuestion < numberOfQuestions -1) {
@@ -46,16 +44,9 @@ export default function QuestionsCard({ data,questionB, onAnswerUpdate, numberOf
       }
     } 
     else {
-      onSetStep(2);
-    }
+          onSetStep(2);
+        }
   }
-
-  // const conditional = data.filter(q => {
-  //   if (!q.condition) {
-  //     return true;
-  //   }
-  //   return q.condition({choices})
-  // })
 
   return (
     <div className="hero is-fullheight">
@@ -68,7 +59,6 @@ export default function QuestionsCard({ data,questionB, onAnswerUpdate, numberOf
                 <label className="radio has-background-light" key={i}>
                   <input type="radio" name="answer" value={choice} onChange={changeHandler} />
                   {choice}
-                  
                 </label>
               ))}
             </div>

@@ -7,8 +7,7 @@
     "Are you tired of paying into a brokes healthcare system for which cists continue to rise?",
   "Are you tired of not getting a straight answer on costs between your healthcare provider and your insurance company?",
 "Have you left a job and are looking for an alternative to your previous insurance plan?"],
-      "questionId": "0",
-      "condition": "Business choice"
+      "questionId": "0"
     },
     {
       "question" : "Do you think transparency is important when it comes to healthcare?",
