@@ -23,8 +23,6 @@ function App() {
         onSetActiveQuestion={setActiveQuestion}
         onSetStep={setStep}
       />}
-      
-    
       {step === 2 && <USStates
         onSetStep={setStep}
       />}

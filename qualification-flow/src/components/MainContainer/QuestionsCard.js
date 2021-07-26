@@ -34,20 +34,24 @@ export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions,
     // }
     onAnswerUpdate(prevState => [...prevState, { q: data.question, a: selected }]);
     setSelected('');
-    if (activeQuestion < numberOfQuestions -1) {
+    if (activeQuestion < numberOfQuestions - 1) {
       onSetActiveQuestion(activeQuestion + 1);
-      {
-        if (activeQuestion === 0 && (selected === "Are you a business owner who is feeling priced out of offering health insurance to your employees?") ){
-         
-          console.log("try again"); 
+      console.log("individual");
+      {if ((data.question === "What problem are you trying to solve?" && selected === "Are you a business owner who is feeling priced out of offering health insurance to your employees?")) {
+      onSetActiveQuestion();
+          console.log("business"); 
         }
+
       }
-    } 
+    }
+    
     else {
           onSetStep(2);
         }
   }
 
+  
+  
   return (
     <div className="hero is-fullheight">
       <div className="card ">
