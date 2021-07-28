@@ -37,8 +37,8 @@ export default function QuestionsCard({ data, onAnswerUpdate, numberOfQuestions,
     if (activeQuestion < (0,5) - 1) {
       onSetActiveQuestion(activeQuestion + 1);
       console.log("individual");
-      {if ((data.question === "What problem are you trying to solve?" && selected === "Are you a business owner who is feeling priced out of offering health insurance to your employees?") ) {
-      onSetActiveQuestion((0,6) - 1);
+      {if ((data.question === "We want to understand what challenges you are facing. Please choose the one that applies to you the most." && selected === "Are you a business owner who is feeling priced out of offering health insurance to your employees?") ) {
+      onSetActiveQuestion(5);
           console.log("business"); 
         }
 

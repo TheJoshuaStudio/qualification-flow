@@ -15,7 +15,7 @@ function inputEmail({ props, onSetStep }) {
       <div className="card">
         <div className="card-content">
           <div className="content">
-                  <h2 className="mb-5">What is your email address to which we can send you your results:</h2>
+                  <h2 className="mb-5">What email can we send your results to?</h2>
                   <div className="field-body">
     <div className="field">
       <p className="control">

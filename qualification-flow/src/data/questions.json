@@ -1,12 +1,11 @@
 {
   "data": [
     {
-      "question" : "What problem are you trying to solve?",
+      "question" : "We want to understand what challenges you are facing. Please choose the one that applies to you the most.",
       "choices": ["Are you feeling priced out of health insurance for yourself or your family and looking for a more affordable way to manage healthcare expenses?",
       "Are you a business owner who is feeling priced out of offering health insurance to your employees?",
-    "Are you tired of paying into a brokes healthcare system for which cists continue to rise?",
-  "Are you tired of not getting a straight answer on costs between your healthcare provider and your insurance company?",
-"Have you left a job and are looking for an alternative to your previous insurance plan?"],
+    "Are you frustrated with the runaround in trying to get cost information between your healthcare provider and your insurance company?",
+  "Have you recently left a job and are looking for an alternative to your previous insurance plan?"],
       "questionId": "0"
     },
     {
@@ -15,7 +14,7 @@
       "questionId": "1"
     },
     {
-      "question": "Do you love the sharing economy concept (Airbnb, Lyft, Gofundme, Kickstarter, Kiva, etc.) and would be interested to learn how this concept can be applied to medical costs?",
+      "question": "Are you familiar with the sharing economy concept used by companies such as Airbnb, Lyft, Kickstarter, Kiva, etc., and would you be interested in learning how this concept can be applied to medical costs?",
       "choices":["Yes", "No"],
       "questionId": "2"
     },
@@ -31,12 +30,12 @@
       "questionId": "4"
     },
     {
-      "question": "(Business Only) Do you have 5 or more individuals at your company?",
+      "question": "Do you have 5 or more individuals at your company?",
       "choices": ["Yes","No", "Unsure?"],
       "questionId": "5"
     },
     {
-      "question": "(Business Only) Which best describes your team?",
+      "question": "Which best describes your team?",
       "choices": ["Happily insured","Uninsured", "Unhappily insured","Not sure"],
       "questionId": "6"
     }
